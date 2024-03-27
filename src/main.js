@@ -5,7 +5,7 @@ import Intro from "./tab/intro"
 import About from './tab/about';
 import Skill from './tab/skill';
 import Project from './tab/project';
-
+import 'bulma/css/bulma.min.css';
 import './main.css';
 
 function Main() {
@@ -23,16 +23,16 @@ function Main() {
     setActiveTab(id);
   }
   return (
-    <div className='layout'>
+    <div className='container is-widescreen'>
       <header className='header'>
         {/* <div className='logo'>eunKyeong</div> */}
 
         <div class="tabs">
           <ul>
-            <li onClick={() => tabClickHandler(0)} class="is-active"><p>intro</p></li>
-            <li onClick={() => tabClickHandler(1)}><p>about</p></li>
-            <li onClick={() => tabClickHandler(2)}><p>skill</p></li>
-            <li onClick={() => tabClickHandler(3)}><p>project</p></li>
+            <li onClick={() => tabClickHandler(0)} className={activeTab == 0 ? 'is-active' : ''}><p>intro</p></li>
+            <li onClick={() => tabClickHandler(1)} className={activeTab == 1 ? 'is-active' : ''}><p>about</p></li>
+            <li onClick={() => tabClickHandler(2)} className={activeTab == 2 ? 'is-active' : ''}><p>skill</p></li>
+            <li onClick={() => tabClickHandler(3)} className={activeTab == 3 ? 'is-active' : ''}><p>project</p></li>
           </ul>
         </div>
 
@@ -40,8 +40,13 @@ function Main() {
       <section className='contents'>
        {tabList[activeTab]}
       </section>
-      <footer>
-        footer
+      <footer class="footer">
+      <div class="has-text-centered">
+        <p>
+          <strong>portfoilo</strong> by EunKyeong.
+          
+        </p>
+      </div>
       </footer>
     </div>
    
