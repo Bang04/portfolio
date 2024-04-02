@@ -1,0 +1,19 @@
+.article{ 
+    white-space: normal;
+    min-height: 680px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.content .txt{
+  padding-bottom: 20px;
+}
+.content .txt,.content .txt2{
+    text-align: center;
+    font-size: 5em;
+    line-height: 5rem;
+  }
