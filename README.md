@@ -1,13 +1,26 @@
-#  React Portfoilo
+# React 기반의 포트폴리오
 
-이 프로젝트는 리액트 기반의 포트폴리오 입니다. 
+이 프로젝트는 리액트 기반의 포트폴리오 파일입니다. 
 
-## 기능 목록
+### 폴더구조
 
-### `React`
- - 리액트 컴포넌트 기능 활용
+    .
+    ├── node_modules
+    ├── src
+    ├── .gitignore
+    ├── gatsby-browser.js
+    ├── gatsby-config.js
+    ├── gatsby-node.js
+    ├── gatsby-ssr.js
+    ├── LICENSE
+    ├── package.json
+    └── README.md
 
-### `Style`
- - bulma 사용
+### 기능
 
+1. 기능
+2. 기능
 
+### 후기
+
+느낀소감입니다. 감사합니다.
