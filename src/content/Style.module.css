@@ -1,0 +1,65 @@
+.section{
+    padding: 3rem 5rem;
+}
+
+.section .header{
+    position: relative;
+    padding: 1rem 0 3rem;
+    text-align: center;
+}
+
+.section .header .title{
+    font-size: 25px;
+    line-height: 40px;
+    
+}
+
+.section .header .subtitle{
+    font-size: 15px;
+    list-style: 20px;
+    color: rgb(121, 123, 125);
+}
+
+.section .box{
+    position: relative;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+}
+
+.section .box_title{
+    font-size: 17px;
+    line-height: 30px;
+    color: #000;
+    font-weight: bold;
+}
+
+
+.section .box_cotent{
+    line-height: 30px;
+}
+
+.section .box_cotent span{
+    font-weight: bold;
+}
+
+@media all and (min-width:1024px) { 
+    .section{
+        padding: 3rem 5rem;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:1023px) {
+    .section{
+        padding: 2rem;
+    }
+    
+}
+
+@media all and (max-width:599px) {
+    .section{
+        padding: 1rem;
+    }
+}

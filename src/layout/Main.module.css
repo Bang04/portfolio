@@ -16,16 +16,18 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-bottom: 1px solid #ddd;
 }
 
 .header .logo{
   max-width: 200px;
   padding: 15px 30px;
-  color: rgb(55, 54, 54);
+  color: #454343;
   line-height: 20px;
   font-size: 1.3rem;
   font-weight: 800;
   cursor: pointer;
+
 }
 
 .header .nav{
@@ -45,6 +47,8 @@ body{
 .article{
   position: relative;
   width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
 }
 /*
 .content {
@@ -77,8 +81,28 @@ body{
   line-height: 30vh;
   font-size: 23vh;
 }
-
-footer{
+*/
+.footer{
   position: relative;
   width: 100%;
-} */
+  height: 50px;
+  border-top: 1px solid #ddd;
+} 
+
+.footer .text_centered{
+  text-align: center;
+  padding-top: 1rem;
+}
+
+
+@media all and (min-width:1024px) { 
+
+}
+
+@media all and (min-width:768px) and (max-width:1023px) {
+
+}
+
+@media all and (max-width:599px) {
+
+}

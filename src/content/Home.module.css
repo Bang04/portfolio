@@ -1,13 +1,11 @@
-.article{ 
-    white-space: normal;
-    min-height: 680px;
+.section{
+ padding: 3rem 5rem;
 }
-
 .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 89vh;
 }
 .content .txt{
   padding-bottom: 20px;
