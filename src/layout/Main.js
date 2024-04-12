@@ -11,54 +11,39 @@ import classes from './Main.module.css';
 
 function Main() {
   const {currentMenu , setCurrent } = useState('Home');
-  const scrollRef = useRef(null);
 
-  const handleScroll = useCallback(() => {
-    console.log("scrolling")
-  }, [])
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectRef = useRef(null);
 
-  useEffect(() => {
-    const div = scrollRef.current
-    div.addEventListener("scroll", handleScroll)
-  }, [handleScroll])
+  const homeClick = () => {
+    homeRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
+  const aboutClick = () => {
+    aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
-  const arrMenu = [
-    {
-      0 : 'Home',
-      1 : 'About',
-      2 : 'Project',
-  
-    }
-  ]
-  // function handleClick(){
-  //   scrollRef.current.
-  // }
+  const projectClick = () => {
+    projectRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
 
   return (
    
     <div className='container is-widescreen'>
- 
       <header className={classes.header}>
         <div className={classes.logo}>B-fortpoilo</div>
       
         <nav className={classes.nav}>
-          <div  className={classes.item} onClick={handleScroll()}>Home</div>
-          <div  className={classes.item}  onClick={handleScroll()}>About</div>
-          <div  className={classes.item} onClick={handleScroll()}>Project</div>
+          <div className={classes.item} onClick={homeClick}>Home</div>
+          <div className={classes.item} onClick={aboutClick}>About</div>
+          <div className={classes.item} onClick={projectClick}>Project</div>
         </nav> 
       </header>
-        <AutoCounter />
-      <article className={classes.article} >
-        <Home />
-      </article>
-      <article className={classes.article}>
-        <About />
-      </article>
-      <article className={classes.article}  ref={scrollRef}>
-        <Project />
-      </article>
-
+        <Home  ref={homeRef}/>
+        <About ref={aboutRef}/>
+        <Project ref={projectRef}/>
       <footer className={classes.footer}>
         <div className={classes.text_centered}>
             <p>
@@ -67,7 +52,6 @@ function Main() {
         </div>
       </footer>
     </div>
-   
   );
 }
 

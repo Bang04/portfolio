@@ -1,11 +1,11 @@
-import React from "react"
+import React, { forwardRef } from "react"
 import classes from './Home.module.css';
 import Typewriter from 'typewriter-effect';
 
-function Home(){
-   
+const Home = forwardRef(function Home(props, ref) {
+
     return(
-        <section className={classes.section}>
+        <section className={classes.section} ref={ref}>
             <div className={classes.content}>
                 <div className={classes.txt}>Hello</div>
                 <div className={classes.txt2}>
@@ -20,6 +20,6 @@ function Home(){
             </div>
         </section>
     )
-}
+});
 
 export default Home;

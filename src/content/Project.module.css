@@ -1,14 +1,7 @@
 
 
-.columns{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.column{
+/* .column{
     display: flex;
     padding: 3rem 1rem;
     border: 1px solid #ddd;
@@ -30,7 +23,6 @@ div figure{
 .thumbnail{
     position: relative;
     width: 100%;
-    /* min-width: 300px; */
     max-width: 600px;
 }
 
@@ -47,7 +39,7 @@ div figure{
     font-weight: bold;
     line-height: 25px;
     margin-right: 10px;
-}
+} */
 
 @media all and (min-width:1024px) { 
 

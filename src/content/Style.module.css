@@ -4,30 +4,103 @@
 
 .section .header{
     position: relative;
-    padding: 1rem 0 3rem;
+    padding: 1rem 0 1rem;
     text-align: center;
 }
 
 .section .header .title{
     font-size: 25px;
+    font-weight: bold;
     line-height: 40px;
-    
 }
 
-.section .header .subtitle{
+.section .header .sub_title{
     font-size: 15px;
     list-style: 20px;
     color: rgb(121, 123, 125);
 }
 
-.section .box{
-    position: relative;
-    padding: 2rem;
+
+.boxlines{
     border: 1px solid #ddd;
     border-radius: 10px;
-    margin-bottom: 50px;
+}
+.section .box{
+    
+    position: relative;
+    padding: 1rem 2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.section .row2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 
 }
+
+.section .row2 .box{
+    width: 100%;
+    min-width: 200px;
+}
+.section .box_title{
+    margin-bottom: 5px;
+    text-indent: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    color: #6b6767;
+}
+
+
+
+
+
+.column{
+    display: flex;
+    padding: 3rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+.column>div{
+    flex-grow: 1;
+    font-size: 15px;
+}
+div figure{
+  text-align: center;
+}
+
+.thumbnail{
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.box .title{
+    font-size: 1.4rem;
+    line-height: 40px;
+    font-weight: bold;
+}
+.stack{
+    position: relative;
+    margin-top: 20px;
+}
+.stack span{ 
+    font-weight: bold;
+    line-height: 25px;
+    margin-right: 10px;
+} 
+
+
+
 .section .box .box_content>div{
     margin-bottom: 20px;
 }
@@ -38,12 +111,12 @@
     line-height: 40px;
 }
 
-.section .box .box_content  .box_col_1{
+.section .box  .box_col_1{
     display: flex;
     flex-direction: column;
 }
 
-.section .box .box_content .box_row_2{
+.section .box .box_row_2{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -59,15 +132,6 @@
     margin-right: 20px;
 }
 
-.section .box_title{
-    margin-bottom: 15px;
-    text-align: left;
-    text-indent: 25px;
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 30px;
-    color: #000;
-}
 
 
 .section .box_content{
@@ -79,16 +143,13 @@
 }
 
 @media all and (min-width:1024px) { 
-    .section{
-        padding: 3rem 5rem;
-    }
+
 }
 
 @media all and (min-width:768px) and (max-width:1023px) {
     .section{
-        padding: 2rem;
+        padding: 1rem;
     }
-    
 }
 
 @media all and (max-width:599px) {
@@ -102,5 +163,28 @@
     .section .box .box_content .box_row_2 div{
         width: 100%;
         height: 40px;
+    }
+
+    .column{
+        flex-direction: column;
+        align-items: flex-start
+       }
+    
+       .box{padding-bottom: 20px;}
+    
+       .box .title{
+        font-size: 1rem;
+        line-height: 30px;
+    }
+
+    .section .row2{
+        flex-direction: column;
+        align-content: center;
+        justify-content:center;
+        padding: 1rem 2rem;
+    }
+    
+    .section .row2 .box{
+        width: 100%;
     }
 }
