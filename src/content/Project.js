@@ -14,7 +14,7 @@ const Project = forwardRef(function Project(props, ref) {
       <section className={classes.section} ref={ref}>
         <div  className={classes.header}>
           <p className={classes.title}>Project</p>
-          <p className={classes.subtitle}>프로젝트 모음</p>
+          <p className={classes.subtitle}>React 기반의 개인 프로젝트</p>
         </div>
 
         <div className={classes.row2}>
@@ -49,6 +49,7 @@ const Project = forwardRef(function Project(props, ref) {
               </div>
             </div>
           </div>
+          
           <div className={classes.column}>
               <div className={classes.box}>
                 <figure>
@@ -79,6 +80,8 @@ const Project = forwardRef(function Project(props, ref) {
             </div>
 
           </div>
+
+          
         </div> 
       </section>
     )

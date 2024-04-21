@@ -17,12 +17,7 @@
     color: rgb(121, 123, 125);
 }
 
-.box{
-    position: relative;
-    padding: 1rem 2rem;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-}
+
 
 .row2{
     display: flex;
@@ -33,18 +28,39 @@
 }
 
 .row2 .box{
+    width: 48%;
     min-width: 200px;
+    border: 0 !important;
 }
+
+.box{
+    position: relative;
+   width: 100%;
+    /* padding: 1rem; */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
 
 .box_title{
-    margin-bottom: 5px;
-    text-indent: 25px;
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+   
     font-size: 18px;
     font-weight: bold;
-    line-height: 25px;
+    line-height: 30px;
     color: #6b6767;
+   
 }
 
+/* .title{
+    font-size: 1.4rem;
+    line-height: 40px;
+    font-weight: bold;
+} */
 
 /* 뱃지 style */
 .badges{
@@ -63,15 +79,16 @@
     font-size: 17px; 
 } 
 /* 뱃지 style */
+
 .column{
+    width: 48%;
     display: flex;
-    padding: 3rem 1rem;
     border: 1px solid #ddd;
     border-radius: 10px;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-    align-content: center;
+    /* align-items: center; 
+    align-content: center; */
     flex-direction: row;
 }
 .column>div{
@@ -84,15 +101,12 @@ div figure{
 
 .thumbnail{
     position: relative;
-    width: 100%;
+    width: 90%;
     max-width: 600px;
+    min-width: 230px;
 }
 
-.box .title{
-    font-size: 1.4rem;
-    line-height: 40px;
-    font-weight: bold;
-}
+
 .stack{
     position: relative;
     margin-top: 20px;
@@ -108,8 +122,8 @@ div figure{
 
 .box_content{
     position: relative;
-    width: 100%;
     margin: 0 auto;
+    padding: 1rem;
 }
 
 .box_content .title{
@@ -118,7 +132,7 @@ div figure{
     font-weight: bold;
 }
 
-.section .box_cotent span{
+.box_cotent span{
     font-weight: bold;
 }
 
@@ -163,12 +177,19 @@ div figure{
         height: 40px;
     }
 
+    .row2 .box{
+        width: 100%;
+    }
+
     .column{
+        width: 100%;
         flex-direction: column;
         align-items: flex-start
     }
 
-    .box{padding-bottom: 20px;}
+    .box{
+        width: 100%;
+        padding-bottom: 20px;}
 
     .box .title{
         font-size: 1rem;
