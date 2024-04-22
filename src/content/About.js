@@ -87,77 +87,83 @@ const About = forwardRef(function About(props, ref) {
           <p className={classes.sub_title}>기본정보 / 스킬 / 최근프로젝트</p>
         </div>
 
-        {/* 기본정보 */}
-        <div className={classes.box}>
-            <div className={classes.box_content}>
-              <div className={classes_a.name}>방은경</div>
 
-              <div className={classes_a.box_row_2}>
-                <div><img src={cellphone} className={classes_a.icon}/>010.4122.0403</div>
-                <div><img src={email} className={classes_a.icon}/>eunkyeong_b@naver.com</div>
-                <div><img src={github} className={classes_a.icon}/><a href="https://github.com/Bang04/Bang04" target="_blank">github 방문하기</a></div>
-                <div><img src={velog} className={classes_a.icon}/><a href="https://velog.io/@bang04"  target="_blank">velog 방문하기</a> </div>
-              </div>
-              
-              <div className={classes_a.box_col_1}>
-                <div><b>-</b> 정보처리기사 최종합격</div>
-                <div><b>-</b> 에이콘 아카데미 프론트엔드 양성과정 수료</div>
-                <div><b>-</b> 세종사이버대학교  졸업 </div>
-              </div>
-            </div>
-        </div>
+        <div className={classes.row2}>
 
-        {/* 스킬뱃지 */}
-        <div className={classes.box_title}>스킬</div>
-          
+          {/* 기본정보 */}
           <div className={classes.box}>
-          <div className={classes.box_content}>
-            <div className={classes_a.group}>
-              <div className={classes_a.type}>Front-End:</div>
-              <div className={classes.badges}>
-                <div className={classes.badge}>html5</div>
-                <div className={classes.badge}>css3</div>
-                <div className={classes.badge}>javascript</div>
-                <div className={classes.badge}>jquery</div>
-                <div className={classes.badge}>bootstrap</div>
+            <div className={classes_a.line}>
+              <div className={classes.box_content}>
+                <div className={classes_a.name}>방은경</div>
+
+                <div className={classes_a.box_row_2}>
+                  <div className={classes_a.item}><img src={cellphone} className={classes_a.icon}/><p>010.4122.0403</p></div>
+                  <div className={classes_a.item}><img src={email} className={classes_a.icon}/><p>eunkyeong_b@naver.com</p></div>
+                  <div className={classes_a.item}><img src={github} className={classes_a.icon}/><a href="https://github.com/Bang04/Bang04" target="_blank"><p>github 방문하기 </p></a></div>
+                  <div className={classes_a.item}><img src={velog} className={classes_a.icon}/><a href="https://velog.io/@bang04"  target="_blank"><p>velog 방문하기 </p></a></div>
+                </div>
+                
+                <div className={classes_a.box_col_1}>
+                  <div><b>-</b> 정보처리기사 최종합격</div>
+                  <div><b>-</b> 에이콘 아카데미 프론트엔드 양성과정 수료</div>
+                  <div><b>-</b> 세종사이버대학교  졸업 </div>
+                </div>
               </div>
             </div>
+          </div>
 
-            <div className={classes_a.group}>
-              <div className={classes_a.type}>Back-End:</div>
-              <div className={classes.badges}>
-                <div className={classes.badge}>php</div>
-              </div>
-            </div>
+          {/* 스킬뱃지 */}
+        
+            <div className={classes.box}>
+              <div className={classes_a.line}>
+              <div className={classes.box_content}>
+                <div className={classes_a.group}>
+                  <div className={classes_a.type}>Front-End:</div>
+                  <div className={classes.badges}>
+                    <div className={classes.badge}>html5</div>
+                    <div className={classes.badge}>css3</div>
+                    <div className={classes.badge}>javascript</div>
+                    <div className={classes.badge}>jquery</div>
+                    <div className={classes.badge}>bootstrap</div>
+                  </div>
+                </div>
 
-            <div className={classes_a.group}>
-              <div className={classes_a.type}>Database: </div>
-              <div className={classes.badges}>
-                <div className={classes.badge}>mysql</div>
-              </div>
-            </div>
+                <div className={classes_a.group}>
+                  <div className={classes_a.type}>Back-End:</div>
+                  <div className={classes.badges}>
+                    <div className={classes.badge}>php</div>
+                  </div>
+                </div>
 
-            <div className={classes_a.group}>
-              <div className={classes_a.type}>Studying:</div>
-              <div className={classes.badges}>
-                <div className={classes.badge}>react</div>
-                <div className={classes.badge}>NextJS</div>
-                <div className={classes.badge}>typescript</div>
-                <div className={classes.badge}>git</div>
-              </div>
-            </div>
+                <div className={classes_a.group}>
+                  <div className={classes_a.type}>Database: </div>
+                  <div className={classes.badges}>
+                    <div className={classes.badge}>mysql</div>
+                  </div>
+                </div>
 
-            <div className={classes_a.group}>
-              <div className={classes_a.type}>Experience:</div>
-              <div className={classes.badges}>
-                <div className={classes.badge}>java</div>
-                <div className={classes.badge}>spring</div>
-                <div className={classes.badge}>oracle</div>
+                <div className={classes_a.group}>
+                  <div className={classes_a.type}>Studying:</div>
+                  <div className={classes.badges}>
+                    <div className={classes.badge}>react</div>
+                    <div className={classes.badge}>NextJS</div>
+                    <div className={classes.badge}>typescript</div>
+                    <div className={classes.badge}>git</div>
+                  </div>
+                </div>
+
+                <div className={classes_a.group}>
+                  <div className={classes_a.type}>Experience:</div>
+                  <div className={classes.badges}>
+                    <div className={classes.badge}>java</div>
+                    <div className={classes.badge}>spring</div>
+                    <div className={classes.badge}>oracle</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
         {/* 프로젝트 모음 */}
         <div className={classes.box_title}>최근 프로젝트</div>
         <div className={classes.row2}>

@@ -19,16 +19,25 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-.box_row_2 div{
+.box_row_2 .item{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 50px;
     width: 50%;
-    height: 40px;
-    font-size: 14px;
+    line-height: 50px;
+
 }
-.box_row_2 .icon{
-    width: 25px;
-    height: 25px;
+.box_row_2 .item .icon{
+    width: 30px;
+    height: 30px;
     margin-right: 11px;
-    vertical-align: middle;
+}
+
+.box_row_2 .item p{
+    font-size: 17px;
+    word-break: break-all;
+    line-height: 20px;
 }
 .box_col_1{
     display: flex;
@@ -50,8 +59,8 @@
     }
     .group .type{ 
         position: relative;
-        width: 120px;
-        font-size: 17px; 
+        margin-right: 10px;
+        font-size: 17px;
         line-height: 38px;
         font-weight: bold;
     }
@@ -110,6 +119,16 @@
 }
 
 @media all and (max-width:599px) {
+
+    .box_row_2 {
+      flex-direction: column;
+    }
+
+    .box_row_2 .item{
+        width: 100%;
+    
+    }
+
     .group .badges .badge{
         font-size: 15px;
     }

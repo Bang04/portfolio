@@ -92,8 +92,8 @@
     flex-direction: row;
 }
 .column>div{
-    flex-grow: 1;
-    font-size: 15px;
+    /* flex-grow: 1;
+    font-size: 15px; */
 }
 div figure{
   text-align: center;
@@ -124,6 +124,7 @@ div figure{
     position: relative;
     margin: 0 auto;
     padding: 1rem;
+    width: 84%;
 }
 
 .box_content .title{
@@ -152,13 +153,14 @@ div figure{
     border-radius: 5px;
 }
 
+  
 @media all and (min-width:1024px) { 
     .section{
         padding: 3rem 2rem;
     }
 }
+@media all and (min-width:599px) and (max-width:1024px) {
 
-@media all and (max-width:768px) {
     .section{
         padding: 2rem;
     }
