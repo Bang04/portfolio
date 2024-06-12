@@ -41,6 +41,7 @@ const Project = forwardRef(function Project(props, ref) {
                     <div className={classes.badge}>Html</div>
                     <div className={classes.badge}>Css3</div>
                     <div className={classes.badge}>React</div>
+                    <div className={classes.badge}>Gatsby</div>
                   </div>
                   {/* 반응형 웹 
                   라이트/다크 모드
