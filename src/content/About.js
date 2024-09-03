@@ -90,32 +90,35 @@ const About = forwardRef(function About(props, ref) {
 
         <div className={classes.row2}>
 
-          {/* 기본정보 */}
+          {/* 기본정보 /스킬뱃지 */}
           <div className={classes.box}>
             <div className={classes_a.line}>
               <div className={classes.box_content}>
                 <div className={classes_a.name}>방은경</div>
 
-                <div className={classes_a.box_row_2}>
-                  <div className={classes_a.item}><img src={cellphone} className={classes_a.icon}/><p>010.4122.0403</p></div>
-                  <div className={classes_a.item}><img src={email} className={classes_a.icon}/><p>eunkyeong_b@naver.com</p></div>
-                  <div className={classes_a.item}><img src={github} className={classes_a.icon}/><a href="https://github.com/Bang04/Bang04" target="_blank"><p>github 방문하기 </p></a></div>
-                  <div className={classes_a.item}><img src={velog} className={classes_a.icon}/><a href="https://velog.io/@bang04"  target="_blank"><p>velog 방문하기 </p></a></div>
+                <div className={classes_a.item}>
+                  <img src={email} className={classes_a.icon}/>
+                  <p>eunkyeong_b@naver.com</p>
+                </div>
+                 
+                <div className={classes_a.item}>
+                  <img src={github} className={classes_a.icon}/>
+                  <a href="https://github.com/Bang04/Bang04" target="_blank">
+                    <p>github 방문하기 </p>
+                  </a>
                 </div>
                 
-                <div className={classes_a.box_col_1}>
-                  <div><b>-</b> 정보처리기사 최종합격</div>
-                  <div><b>-</b> 에이콘 아카데미 프론트엔드 양성과정 수료</div>
-                  <div><b>-</b> 세종사이버대학교  졸업 </div>
+                <div className={classes_a.item}>
+                  <img src={velog} className={classes_a.icon}/>
+                  <a href="https://velog.io/@bang04"  target="_blank">
+                    <p>velog 방문하기 </p>
+                  </a>
                 </div>
+               
               </div>
             </div>
-          </div>
 
-          {/* 스킬뱃지 */}
-        
-            <div className={classes.box}>
-              <div className={classes_a.line}>
+            <div className={classes_a.line}>
               <div className={classes.box_content}>
                 <div className={classes_a.group}>
                   <div className={classes_a.type}>Front-End:</div>
@@ -163,12 +166,9 @@ const About = forwardRef(function About(props, ref) {
               </div>
             </div>
           </div>
-        </div>
-        {/* 프로젝트 모음 */}
-        <div className={classes.box_title}>최근 프로젝트</div>
-        <div className={classes.row2}>
 
-          
+
+          {/* 프로젝트 */}
           {/* 프로젝트1 */}
           <div className={classes.box}>
               <div className={classes_a.line}>
@@ -253,8 +253,9 @@ const About = forwardRef(function About(props, ref) {
               </div>
             </div>
           </div>
-          
+
         </div>
+
       </section>
     )
 

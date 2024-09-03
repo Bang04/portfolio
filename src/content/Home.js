@@ -11,7 +11,7 @@ const Home = forwardRef(function Home(props, ref) {
                 <div className={classes.txt2}>
                     <Typewriter
                         options={{
-                            strings: ['I am <span>PHP Developer</span>.', 'I am <span>Front-End Developer.</span>'],
+                            strings: ['I am <span>Front-End Developer.</span>'],
                             autoStart: true,
                             loop: false,
                         }}
