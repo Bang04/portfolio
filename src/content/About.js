@@ -94,7 +94,7 @@ const About = forwardRef(function About(props, ref) {
           <div className={classes.box}>
             <div className={classes_a.line}>
               <div className={classes.box_content}>
-                <div className={classes_a.name}>방은경</div>
+                {/* <div className={classes_a.name}>방은경</div> */}
 
                 <div className={classes_a.item}>
                   <img src={email} className={classes_a.icon}/>
